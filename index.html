@@ -1,24 +1,12 @@
-<?php
-    // access_token
-    // 申请方法：码云gitee - 个人设置 - 安全设置，私人令牌 - 权限给issues与个人信息获取
-    $token = "0d4656bf06d57b8da4cee1fadba777e6";
-    
-    $UserInfo = file_get_contents("https://gitee.com/api/v5/users/nutssss/repos?access_token=" . $token . "&type=all&sort=full_name&page=1&per_page=20");
-    $UserInfo = json_decode($UserInfo, true);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>这里是网站标题</title>
-    <meta name="description" content="这里是网站介绍">
-    <meta name="keywords" content="这里是网站关键词"> -->
-    <title>N0ts | 一个热爱游戏的咸鱼</title>
-    <meta name="description" content="即使前方的路看似绝境，也要有硬生生给自己开出一条路的勇气">
-    <meta name="keywords" content="n0ts,nutssss,坚果,主页,博客,tqy,xhj">
+    <title>Path Unknown</title>
+    <meta name="description" content="凡心所向，素履以往">
+    <meta name="keywords" content="Path Unknown">
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/viewer.min.css">
@@ -43,28 +31,19 @@
                 <img src="./favicon.ico" alt="favicon">
                 <ul id="menuUL">
                     <li>
-                        <a href="https://n0ts.cn/" target="_blank">首页(L)</a>
+                        <a href="https://www.pathunknown.ml/" target="_blank">首页</a>
                     </li>
                     <li>
-                        <a href="https://blog.n0ts.cn/me" target="_blank">关于我(O)</a>
+                        <a href="https://blog.pathunknown.ml/about/" target="_blank">关于我</a>
                     </li>
                     <li>
-                        <a href="https://blog.n0ts.cn/category/mywork" target="_blank">我的垃圾项目(V)</a>
+                        <a href="http://blog.pathunknown.ml/" target="_blank">博客</a>
                     </li>
                     <li>
-                        <a href="https://lovexhj.cn/" target="_blank">我的爱人(E)</a>
-                    </li>
-                    <li>
-                        <a href="https://note.n0ts.cn/" target="_blank">笔记(X)</a>
-                    </li>
-                    <li>
-                        <a href="https://blog.n0ts.cn/" target="_blank">博客(H)</a>
-                    </li>
-                    <li>
-                        <a href="https://blog.n0ts.cn/msg" target="_blank">留言(J)</a>
+                        <a href="http://blog.pathunknown.ml/mes/" target="_blank">留言</a>
                     </li>
                 </ul>
-                <p>N0ts.html</p>
+                <p>ArchyMoe.html</p>
             </div>
 
             <!-- 左侧菜单按钮 -->
@@ -85,24 +64,22 @@
                     <div class="div2"></div>
                 </div>
                 <div class="img">
-                    <img src="https://q1.qlogo.cn/g?b=qq&nk=1656071287&s=640" alt="N0ts">
+                    <img src="https://secure.gravatar.com/avatar/c9a42759cb4024522b9cf3f15cf676a6?s=400&r=G&d=" alt="ArchyMoe">
                 </div>
                 <div class="introduction">
-                    <h1>N0ts</h1>
-                    <p>大专的咸鱼，爱好计算机、旅行、篮球，以及我公主般的女朋友。</p>
+                    <h1>ArchyMoe</h1>
+                    <p>初二菜鸡OIer</p>
                 </div>
                 <div class="icon">
                     <ul>
-                        <li><a href="https://wpa.qq.com/msgrd?v=3&uin=1656071287&site=qq&menu=yes"><i class="fa fa-qq"
+                        <li><a href="https://github.com/ArchyMoe"><i class="fa fa-github fa-lg"
                                     aria-hidden="true"></i></a></li>
-                        <li><a href="https://gitee.com/nutssss"><i class="fa fa-github fa-lg"
-                                    aria-hidden="true"></i></a></li>
-                        <li><a href="https://blog.n0ts.cn/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+                        <li><a href="https://blog.pathunkown.ml/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
                 <div class="connect">
-                    <a href="https://blog.n0ts.cn/me">关于</a>
-                    <a href="https://blog.n0ts.cn/msg">留言</a>
+                    <a href="https://blog.pathunknown.ml/about/" target="_blank">关于我</a>
+                    <a href="http://blog.pathunknown.ml/mes/" target="_blank">留言</a>
                 </div>
             </div>
 
@@ -115,26 +92,16 @@
                 <h1>导航</h1>
                 <ul>
                     <li>
-                        <a href="https://n0ts.cn/" target="_blank" onclick="MenuClick(false)">首页</a>
+                        <a href="https://www.pathunknown.ml/" target="_blank">首页</a>
                     </li>
                     <li>
-                        <a href="https://blog.n0ts.cn/me" target="_blank" onclick="MenuClick(false)">关于我</a>
+                        <a href="https://blog.pathunknown.ml/about/" target="_blank">关于我</a>
                     </li>
                     <li>
-                        <a href="https://blog.n0ts.cn/category/mywork" target="_blank"
-                            onclick="MenuClick(false)">我的垃圾项目</a>
+                        <a href="http://blog.pathunknown.ml/" target="_blank">博客</a>
                     </li>
                     <li>
-                        <a href="https://lovexhj.cn/" target="_blank" onclick="MenuClick(false)">我的爱人</a>
-                    </li>
-                    <li>
-                        <a href="https://note.n0ts.cn/" target="_blank" onclick="MenuClick(false)">笔记</a>
-                    </li>
-                    <li>
-                        <a href="https://blog.n0ts.cn/" target="_blank" onclick="MenuClick(false)">博客</a>
-                    </li>
-                    <li>
-                        <a href="https://blog.n0ts.cn/msg" target="_blank" onclick="MenuClick(false)">留言</a>
+                        <a href="http://blog.pathunknown.ml/mes/" target="_blank">留言</a>
                     </li>
                 </ul>
             </div>
@@ -243,35 +210,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="pages-text" id="pages-text2">
-                    <div class="pages-text-box">
-                        <h1>我的开源垃圾</h1>
-                        <ul class="giteeBoxUL">
-                            <?php for($i = 0; $i < count($UserInfo); $i++):?>
-                            <li>
-                                <div class="giteeBox-Title">
-                                    <a target="_blank" href="<?php echo $UserInfo[$i]['namespace']['html_url'];?>"
-                                        style="color: rgb(110, 110, 110);"><?php echo substr($UserInfo[$i]['human_name'], 0, strrpos($UserInfo[$i]['full_name'], '/'));?></a>
-                                    /
-                                    <a target="_blank"
-                                        href="<?php echo substr($UserInfo[$i]['html_url'], 0, strrpos($UserInfo[$i]['html_url'], '.git'));?>"><?php echo substr($UserInfo[$i]['full_name'], strrpos($UserInfo[$i]['human_name'], '/') + 1);?></a>
-                                    <div class="starBox">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <span class="star"><?php echo $UserInfo[$i]['stargazers_count'];?></span>
-                                    </div>
-                                </div>
-                                <p class="giteeBox-Text"><?php echo $UserInfo[$i]['description'];?></p>
-                                <p class="giteeBox-Time">
-                                    最后更新：<?php echo substr($UserInfo[$i]['updated_at'], 0, strrpos($UserInfo[$i]['updated_at'], 'T'));?>
-                                </p>
-                                <a target="_blank"
-                                    href="<?php echo substr($UserInfo[$i]['html_url'], 0, strrpos($UserInfo[$i]['html_url'], '.git'));?>"
-                                    class="aClick show">查看</a>
-                            </li>
-                            <?php endfor;?>
-                        </ul>
-                    </div>
-                </div>
                 <div class="pages-text" id="pages-text3">
                     <div class="pages-text-box">
                         <h1>test3</h1>
@@ -280,25 +218,6 @@
                 <div class="pages-text" id="pages-text4">
                     <div class="pages-text-box">
                         <h1>test4</h1>
-                    </div>
-                </div>
-                <div class="pages-text" id="pages-text5">
-                    <div class="pages-text-box">
-                        <h1>我与她</h1>
-                        <p>2018-11-19</p>
-                        <p>故事开始</p>
-                        <div class="pages-text-box-img">
-                            <img src="./images/love1.jpg" alt="love1" class="n0ts-img">
-                            <h6>我们的第一张合影</h6>
-                        </div>
-                        <p>截止现在</p>
-                        <p id="lovetime1">d</p>
-                        <p>有你的每一天都如糖果一样甜</p>
-                        <div class="pages-text-box-img">
-                            <img src="./images/love2.jpg" alt="love2" class="n0ts-img">
-                            <h6>看电影日常</h6>
-                        </div>
-                        <a href="https://lovexhj.cn" class="aClick" target="_blank">More?</a>
                     </div>
                 </div>
             </div>
@@ -317,21 +236,13 @@
                 <!-- 页面 -->
                 <div class="pages-text pages-text-show">
                     <div class="pages-text-box pages-text-box2">
-                        <h1>我与她</h1>
-                        <p>2018-11-19</p>
+                        <h1>我</h1>
+                        <p>2019-03-25</p>
                         <p>故事开始</p>
                         <div class="pages-text-box-img">
-                            <img src="./images/love1.jpg" alt="love1" class="n0ts-img">
-                            <h6>我们的第一张合影</h6>
+                            <h6>你好，OI！</h6>
                         </div>
-                        <p>截止现在</p>
-                        <p id="lovetime2"></p>
-                        <p>有你的每一天都如糖果一样甜</p>
-                        <div class="pages-text-box-img">
-                            <img src="./images/love2.jpg" alt="love2" class="n0ts-img">
-                            <h6>看电影日常</h6>
-                        </div>
-                        <a href="https://lovexhj.cn" class="aClick" target="_blank">More?</a>
+                        
                     </div>
                 </div>
 
@@ -340,7 +251,6 @@
             <!-- 底部版权 -->
             <div class="footer" id="footer">
                 <p class="left">&copy; 2020 N0ts | THEME MADE BY <a href="https://n0ts.cn">N0ts</a></p>
-                <p class="right"><a href="http://beian.miit.gov.cn">湘ICP备20005603号-2</a></p>
             </div>
 
         </div>
